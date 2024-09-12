@@ -14,7 +14,7 @@ def clean_click(df):
     bins = [16, 24, 34, 44, 54, 90]
     labels = ['16-24', '25-34', '35-44', '45-54', '55+']
     df['Age_Range'] = pd.cut(df['Age'], bins=bins, labels=labels, include_lowest=True)
-    
+
     return df
 
 def click_by_category(df):

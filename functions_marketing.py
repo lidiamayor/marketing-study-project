@@ -13,18 +13,19 @@ def clean_df_marketing(df):
     }
     df["Education_Level"] = df['Education'].replace(education_levels) 
 
-    living_status = {'Alone': 'Living Alone', 'Absurd': 'Living Alone', 'YOLO': 'Living Alone', 'Widow': 'Living Alone',
+    living_status = {'Alone': 'Living Alone', 'Absurd': 'Living Alone', 'YOLO': 'Living Alone', 'Widow': 'Living Alone', 'Single': 'Living Alone', 'Divorced': 'Living Alone',
                         'Together': 'Living with Others', 'Married': 'Living with Others'
     } 
     df['Living_Status'] = df['Marital_Status'].replace(living_status)
 
-    df["Age"] = 2022 - df["Year_Birth"]
+    df['Dt_Customer'] = pd.to_datetime(df['Dt_Customer'])
+    df["Age"] = df['Dt_Customer'].dt.year - df["Year_Birth"]
 
     df['Is_Parent'] = (df['Kidhome'] + df['Teenhome'] > 0).astype(int)
     
     df = df[df['Age']<100]
-    bins = [24, 34, 44, 54, 64, 74, 100] 
-    labels = ['25-34', '35-44', '45-54', '55-64', '65-74', '75+']
+    bins = [16, 24, 34, 44, 54, 64, 74] 
+    labels = ['16-24', '25-34', '35-44', '45-54', '55-64', '65-74']
     df['Age_Range'] = pd.cut(df['Age'], bins=bins, labels=labels, right=False)
 
     bins = [20000, 40000, 60000, 80000, 100000]
@@ -184,21 +185,20 @@ def son_at_home(df):
 def purchases_by_living_status(df):
     spend_by_livingstatus = df.groupby('Living_Status')['MntWines'].mean().reset_index()
 
-    spend_by_livingstatus = spend_by_livingstatus.sort_values(by='MntWines')
-
     plt.figure(figsize=(10, 6))
 
-    sns.barplot(x='Living_Status', y='MntWines', data=spend_by_livingstatus, palette='pastel', hue='Living_Status')
+    ax = sns.barplot(x='Living_Status', y='MntWines', data=spend_by_livingstatus, palette='pastel', hue='Living_Status')
 
     plt.xlabel('Living status')
     plt.ylabel('Average purchases wine')
+
+    for i, row in spend_by_livingstatus.iterrows():
+        ax.text(i, row['MntWines'] + 0.5, f'{row["MntWines"]:.2f}', ha='center')
 
     plt.tight_layout()
     plt.show()
 
 def purchases_by_month(df):
-    df['Dt_Customer'] = pd.to_datetime(df['Dt_Customer'])
-
     df['Month'] = df['Dt_Customer'].dt.month
 
     monthly_sales = df.groupby('Month')['MntWines'].sum().reset_index()
