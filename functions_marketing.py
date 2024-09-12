@@ -80,10 +80,10 @@ def site_purchases_by_age(df_wine):
     bar_width = 0.15
 
     # create the x-values for the bars
-    rango_edades = np.arange(len(age_grouped))
+    age_range = np.arange(len(age_grouped))
 
     # calculate the x-position of each bar
-    r1 = rango_edades
+    r1 = age_range
     r2 = [x + bar_width for x in r1]
     r3 = [x + bar_width for x in r2]
     r4 = [x + bar_width for x in r3]
