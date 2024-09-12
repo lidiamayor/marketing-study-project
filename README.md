@@ -1,29 +1,40 @@
-# Marketing Strategy Analysis Project for a Wine Production Company
 
-## Description
-This project is the result of the work of **Lidia Mayor** and **Ana Nofuentes**, students in a data analysis bootcamp, where we represent a consulting firm specializing in marketing strategies. Our goal is to help a wine production company identify key customers to maximize the profitability of their sales.
+---
 
-### Project Objectives:
-1. **Identify key customers**: Analyze the data to determine which customer profiles are the most profitable.
-2. **Optimize marketing strategies**: Provide recommendations on where to focus marketing efforts to improve sales.
+# 📊 Data Analysis for Wine Consumption
 
-## Project Contents
+Hello, data enthusiasts! 🌟 We are Ana Nofuentes and Lidia Mayor, students from a data analysis bootcamp. This notebook is a comprehensive guide to our project focused on analyzing wine consumption data. Our aim is to provide insightful customer segmentation to help a wine producer boost their sales.
 
-### 1. **Data Loading**
-   We load the data provided by the company to start the analysis.
+## 📈 Notebook Overview
 
-### 2. **Library Initialization**
-   We initialize the necessary libraries to manipulate and analyze the data.
+### Data Loading:
+We start by initializing the necessary libraries and importing the wine consumption dataset.
 
-### 3. **Feature Engineering**
-   We transform raw data into more informative features to perform a more precise analysis.
+### Feature Engineering:
+Transforming raw data into informative features to enhance the precision of our analysis.
 
-### 4. **Data Cleaning**
-   We remove null values, duplicates, and correct inconsistent data to prepare the data for analysis.
+### Data Cleaning:
+We meticulously clean the data by removing null values, duplicates, and correcting inconsistencies to ensure accurate analysis.
 
-### 5. **Exploratory Data Analysis (EDA)**
-   We analyze the distribution of customer age to identify relevant behavioral patterns.
+### Exploratory Data Analysis (EDA):
+We delve into the distribution of wine consumption by age and gender to uncover patterns and trends.
 
-## Authors
-- **Lidia Mayor** - Bootcamp Student
-- **Ana Nofuentes** - Bootcamp Student
+## 📸 Key Visual Insights
+
+- **Wine Consumption by Age and Gender**: Visualizations showing how wine consumption varies across different age groups and between men and women.
+- **Purchase Behavior Analysis**: Graphs illustrating purchasing preferences and trends based on age and income.
+- **Seasonal Sales Trends**: Insights into how wine sales fluctuate throughout the year, highlighting peak and low periods.
+
+## 🤖 About Us
+
+We are Ana and Lidia, passionate students committed to turning data into actionable insights. Through our project, we aim to empower businesses with data-driven strategies to optimize their marketing efforts.
+
+Special Note: For businesses looking for in-depth data analysis and customer segmentation, feel free to reach out to us. We're here to help you harness the power of your data.
+
+## 📩 Get in Touch
+
+Ready to dive into data with us? Contact us to explore how we can support your business goals!
+
+📔 Explore the Notebook: For a detailed dive, explore the Notebook on  [GitHub](https://github.com/lidiamayor/marketing-study-project/blob/main/main.ipynb).
+
+---
