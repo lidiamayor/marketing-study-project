@@ -21,13 +21,13 @@ We delve into the distribution of wine consumption by age and gender to uncover 
 
 ## 📸 Key Visual Insights
 
-![Wine Consumption by age](https://drive.google.com/file/d/1aor3SO261VdDts6svA4yXpBKqCCsFZow/view?usp=sharing) 
+![Wine Consumption by age](https://github.com/lidiamayor/marketing-study-project/blob/main/images/cons_by_age.png) 
 *Visualizations showing how wine consumption varies across different age groups.*
 
-![Purchase behavior analysis](https://drive.google.com/file/d/1ZqHfDMRRdVH6n7wBsmyPeP-r6wXR_yAC/view?usp=sharing) 
+![Purchase behavior analysis](https://github.com/lidiamayor/marketing-study-project/blob/main/images/purshases_by_income.png) 
 *Graphs illustrating purchasing based on income.*
 
-![Interest in ads by website category](https://drive.google.com/file/d/1Oj4Gbik10aGrVJaJYsnmv0Km6WevTDlZ/view?usp=sharing)
+![Interest in ads by website category](https://github.com/lidiamayor/marketing-study-project/blob/main/images/interest_by_income.png)
 *Insights into how the website category influences interest in ads among people with diferent incomes*
 
 
